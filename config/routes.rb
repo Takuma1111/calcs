@@ -3,8 +3,8 @@ Rails.application.routes.draw do
  #get 'tests/message' => 'tests#message'
 
  #get 'tests/:msg' => 'tests#show'
- resources :calcs
-resources :calcs_1s
+ resources :tests_controller
+
 
  #get 'tests/:hensu1/:hensu2/:hensu3' => 'tests#show'
  get "calcs/show/:hensu1/:hensu2/:hensu3" => "tests#show"
